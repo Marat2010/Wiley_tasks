@@ -60,14 +60,14 @@
     "friends": [
       {
         "id": 0,
-        "name": "Alyce Wall"
+        "name": "Alyce Wall--2"
       },
       {
-        "name": "Eloise Cervantes"
+        "name": "Eloise Cervantes--2"
       },
       {
         "id": 2,
-        "name": "Turner Morton---2"
+        "name": "Turner Morton--2"
       }
     ],
     "greeting": "Hello, stranger! You have 8 unread messages.",
@@ -84,14 +84,14 @@
     "friends": [
       {
         "id": 0,
-        "name": "Alyce Wall"
+        "name": "Alyce Wall--3"
       },
       {
-        "name": "Eloise Cervantes"
+        "name": "Eloise Cervantes--3"
       },
       {
         "id": 2,
-        "name": "Turner Morton---3"
+        "name": "Turner Morton--3"
       }
     ],
     "greeting": "Hello, stranger! You have 8 unread messages.",
