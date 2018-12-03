@@ -1,20 +1,25 @@
 #!/usr/bin/env bash
 
-set -x
+# SSH connections without password entry.
+# Pre-run for each server:
+# $ ssh-keygen
+# $ ssh-copy-id -i ~/.ssh/id_rsa.pub UserName@RemoteServer
+# $ ssh-add
 
-USER="admin"
-PASSWD="123456"
+TMP_INFO="tmp_info.txt"
+USER="marat"
+HOSTS_FILE="HOSTS.txt"
 
-LOG="ssh_conn.log"
+date > $TMP_INFO
+for HOST in $(cat $HOSTS_FILE) ; do
+    ssh $USER@$HOST 'hostname' >> $TMP_INFO
+    echo '-------------------------' >> $TMP_INFO
 
-HOSTS="
-qaserver1
-qaserver2
-qaserver3
-qaserver4
-qaserver5
-qaserver6
-"
+#    pass
+#   add code
 
-for H in $HOSTS
-do
+
+    echo >> $TMP_INFO
+done
+
+cat tmp_info.txt
