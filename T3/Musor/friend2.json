@@ -10,14 +10,14 @@
     "friends": [
       {
         "id": 0,
-        "name": "Alyce Wall"
+        "name": "Alyce Wall--1"
       },
       {
-        "name": "Eloise Cervantes"
+        "name": "Eloise Cervantes--1"
       },
       {
         "id": 2,
-        "name": "Turner Morton---1"
+        "name": "Turner Morton--1"
       }
     ],
     "greeting": "Hello, stranger! You have 8 unread messages.",
@@ -87,7 +87,32 @@
         "name": "Alyce Wall--3"
       },
       {
-        "name": "Eloise Cervantes--3"
+        "name": "Eloise Cervantes--3",
+        "in_tags":
+                {
+                  "_id": "5bc44d3edf2b8798ce3c95bd",
+                  "tags": [
+                    "proident",
+                    "aute",
+                    "in",
+                    "laborum"
+                  ],
+                  "friends": [
+                    {
+                      "id": 0,
+                      "name": "Alyce Wall--3_1"
+                    },
+                    {
+                      "name": "Eloise Cervantes--3_1"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Turner Morton--3_1"
+                    }
+                  ],
+                  "greeting": "Hello, stranger! You have 8 unread messages.",
+                  "favoriteFruit": "strawberry"
+                }
       },
       {
         "id": 2,
