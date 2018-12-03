@@ -5,6 +5,8 @@
 # $ ssh-keygen
 # $ ssh-copy-id -i ~/.ssh/id_rsa.pub UserName@RemoteServer
 # $ ssh-add
+#
+# Forward script: ssh $user@$host 'bash -s' < script.sh
 
 TMP_INFO="tmp_info.txt"
 USER="marat"
@@ -21,6 +23,3 @@ for HOST in $(cat $HOSTS_FILE) ; do
 done
 
 cat tmp_info.txt
-
-
-
