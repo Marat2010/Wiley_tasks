@@ -1,0 +1,4 @@
+localhost
+Mac-mini-user
+mix64-vm
+mix64-vm

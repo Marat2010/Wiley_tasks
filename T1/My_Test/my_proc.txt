@@ -1,0 +1,6 @@
+ 2462 дек05 Wed Dec  5 11:34:08 2018 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 8388640 whiskermenu Меню Whisker Показывает меню для простого доступа к установленным приложениям
+ 2508 дек05 Wed Dec  5 11:34:08 2018 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libindicator-plugin.so 7 8388641 indicator Индикаторы Предоставляет место на панели для индикаторов Unity. Индикаторы позволяют приложениям и системным сервисам показывать свой статус и взаимодействовать с пользователем.
+ 2509 дек05 Wed Dec  5 11:34:08 2018 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 6 8388642 systray Системный лоток Область для отображения значков уведомлений
+ 2510 дек05 Wed Dec  5 11:34:08 2018 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libdatetime.so 5 8388643 datetime Дата и время Отображает дату и время на панели, содержит простой календарь
+ 2516 дек05 Wed Dec  5 11:34:09 2018 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libthunar-tpa.so 11 8388651 thunar-tpa Корзина Отображает корзину на панели
+ 7472 00:07 Thu Dec  6 00:07:24 2018 grep --color=auto wrapper

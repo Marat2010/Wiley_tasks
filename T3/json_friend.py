@@ -1,6 +1,8 @@
 import json
 import os
 
+# Run: "python3 json_friend.py"
+
 #_USERNAME = os.getenv("SUDO_USER") or os.getenv("USER")
 #_HOME = os.path.expanduser('~'+_USERNAME)
 

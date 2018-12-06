@@ -41,4 +41,4 @@ for item in $(cat $JAVA_PROC_LAST |tr '-' ' '|tr '.' ' '| tr -s ' ') ; do
 done
 
 cat $LAST_TIME
-rm $TMP_DATE $TMP_DATE_NUMBER $TMP_DATE_LAST $JAVA_PROC_LAST
+rm $TMP_DATE $TMP_DATE_NUMBER
