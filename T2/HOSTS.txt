@@ -4,3 +4,4 @@ qaserver3
 qaserver4
 qaserver5
 qaserver6
+mix64

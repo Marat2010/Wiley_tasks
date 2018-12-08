@@ -24,10 +24,8 @@ else:
     num_id = int(num_id)
 
 for elem in js_obj:
-    if (elem.get('tags')) and (elem.get('friends')) and (user in elem.get('tags')):     # находим ключи
-                                            # 'tags', 'friends', и в списке 'tags' имя заданное в USER
-                                            # Порядок важен!: user - последним
-        for fr_elem in elem.get('friends'):     # проходим по списку друзей из словарей
+    if user in elem['tags']:    # находим ключ 'tags', и в этом списке имя заданное в USER
+        for fr_elem in elem['friends']:     # проходим по списку друзей из словарей
             if fr_elem.get('id') == num_id:     # находим значение по ключу 'id' и сравнение
-                print('%s friends: %s ' % (user, fr_elem.get('name')))
+                print('%s friends: %s ' % (user, fr_elem['name']) )
 
