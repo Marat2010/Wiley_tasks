@@ -2,42 +2,34 @@ import json
 import os
 
 cur_path = os.getcwd()
-fileName = 'friend.json'
+fileName = 'friend3.json'
 file_path = os.path.join(cur_path, fileName)
 json_obj = json.load(open(file_path))
 tags = 'tags'
 user = 'laborum'
+#user = 'exploit'
 num_id = 2
 
-# for elem in json_obj:
-#     if user in elem['tags']:
-#         for fr_elem in elem['friends']:
-#             if fr_elem.get('id') == num_id:
-#                 print('%s\'s friends: %s ' % (user, fr_elem['name']) )
 
-# def recursive(_item):
-#     if _item.__class__ == {}.__class__:
-#         if user in _item['tags']:
-#             print('qqqqqq',_item['tags'])
-#
-#         for i in _item:
-#             #print(_item[i])
-#             recursive(_item[i])
-#         print('-----------')
-#     if _item.__class__ == [].__class__:
-#         for i in _item:
-#             print(i)
-#             recursive(i)
+def find(elem):
+    if (elem.get('tags')) and (elem.get('friends')) and (user in elem.get('tags')):  # находим ключи
+        # 'tags', 'friends', и в списке 'tags' имя заданное в USER
+        # Порядок важен!: user - последним
+        for fr_elem in elem.get('friends'):  # проходим по списку друзей из словарей
+            if fr_elem.get('id') == num_id:  # находим значение по ключу 'id' и сравнение
+                print('%s friends: %s ' % (user, fr_elem.get('name')))
+
 
 def recursive(obj):
     if isinstance(obj, dict):
-        for key, value in obj.iteritems():
-            print(key)
+        if obj.get(tags) and obj.get('friends'):
+            find(obj)
+        for key, value in obj.items():
             recursive(value)
     elif isinstance(obj, list):
         for item in obj:
             recursive(item)
     else:
-        print(obj)
+        pass
 
 recursive(json_obj)
